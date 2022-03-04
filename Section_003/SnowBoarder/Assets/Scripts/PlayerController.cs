@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2d;
     SurfaceEffector2D surfaceEffector2D;
+    
     [SerializeField] float torqueAmount = 3f;
     [SerializeField] float boostSpeed = 30f;
     [SerializeField] float baseSpeed = 20f;
@@ -49,5 +50,4 @@ public class PlayerController : MonoBehaviour
             rb2d.AddTorque(-torqueAmount);
         }
     }
-
 }
