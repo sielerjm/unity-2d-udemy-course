@@ -6,7 +6,7 @@ public class FollowCamera : MonoBehaviour
 {
     // The Camera's position should be the same as the player's
     [SerializeField] GameObject thingToFollow;
-    [SerializeField] int cameraDistance = -10;
+    [SerializeField] int cameraDistance = -15;
 
     // Update is called once per frame
     void LateUpdate()
