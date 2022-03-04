@@ -10,4 +10,4 @@ Repo for 2d unity Udemy course
            margin-left: auto;
            width: 500px;
            margin-right: auto;"
-     src="Section_003/Gifs/SofieSnowboarder.GIF">
+     src="Section_003/Gifs/SofieSnowboarder2.GIF">
