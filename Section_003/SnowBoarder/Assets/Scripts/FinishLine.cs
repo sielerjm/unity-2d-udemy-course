@@ -14,7 +14,10 @@ public class FinishLine : MonoBehaviour
         if (collision.tag == "Player")
         {
             Debug.Log("You Finished!");
+
             finishEffect.Play();  // plays particle effect
+            GetComponent<AudioSource>().Play();  // Plays audio clip 
+
             Invoke("ReloadScene", loadDelay);  // delays reloading the scene by a set time
         }
     }
