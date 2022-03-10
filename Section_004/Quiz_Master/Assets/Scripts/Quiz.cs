@@ -17,6 +17,13 @@ public class Quiz : MonoBehaviour
 
     private void Start()
     {
+        GetNextQuestion();
+        //DisplayQuestion();
+
+    }
+
+    void DisplayQuestion()
+    {
         questionText.text = question.GetQuestion();
 
         //TextMeshProUGUI buttonText = answerButtons[0].GetComponentInChildren<TextMeshProUGUI>();
@@ -26,7 +33,37 @@ public class Quiz : MonoBehaviour
             TextMeshProUGUI buttonText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
             buttonText.text = question.GetAnswer(i);
         }
+    }
 
+
+    void GetNextQuestion()
+    {
+        SetButtonState(true);
+        SetDefaultButtonSprites();
+        DisplayQuestion();
+    }
+
+
+    void SetButtonState(bool state)
+    {
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            Button button = answerButtons[i].GetComponent<Button>();
+            button.interactable = state;
+        }
+    }
+
+    void SetDefaultButtonSprites()
+    {
+
+        //Image buttonImage;
+
+        for (int i = 0; i < answerButtons.Length; i++)
+        {
+            Image buttonImage = answerButtons[i].GetComponent<Image>();
+            buttonImage.sprite = defaultAnswerSprite;
+
+        }
     }
 
     public void OnAnswerSelected(int index)
@@ -34,7 +71,7 @@ public class Quiz : MonoBehaviour
         Image buttonImage;
 
 
-        if(index == question.GetCorrectAnswerIndex())  // ! This isn't being triggered
+        if(index == question.GetCorrectAnswerIndex()) 
         {
             questionText.text = "Correct!";
 
@@ -42,6 +79,7 @@ public class Quiz : MonoBehaviour
 
             buttonImage = answerButtons[index].GetComponent<Image>();
             buttonImage.sprite = correctAnswerSprite;
+
         } else
         {
             Debug.Log("Incorrect Button!");  // TEST
@@ -54,6 +92,8 @@ public class Quiz : MonoBehaviour
             buttonImage.sprite = correctAnswerSprite;
 
         }
+
+        SetButtonState(false);
     }
 
 }
