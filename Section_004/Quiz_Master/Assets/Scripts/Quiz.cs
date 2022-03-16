@@ -56,11 +56,11 @@ public class Quiz : MonoBehaviour
     void SetDefaultButtonSprites()
     {
 
-        //Image buttonImage;
+        //Image buttonImage;  // Doesn't work if instantiated here
 
         for (int i = 0; i < answerButtons.Length; i++)
         {
-            Image buttonImage = answerButtons[i].GetComponent<Image>();
+            Image buttonImage = answerButtons[i].GetComponent<Image>(); // Does work if instantiated here
             buttonImage.sprite = defaultAnswerSprite;
 
         }
