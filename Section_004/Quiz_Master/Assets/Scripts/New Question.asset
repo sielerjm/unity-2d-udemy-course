@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   question: "5. Who\u2019s Sofie\u2019s greatest enemy?"
   answers:
-  - 
-  - 
-  - 
-  - 
-  correctAnswerIndex: 0
+  - Squirrels
+  - Bailey
+  - FedEx delivery driver
+  - Birds
+  correctAnswerIndex: 1
