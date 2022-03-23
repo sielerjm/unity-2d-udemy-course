@@ -11,3 +11,11 @@ Repo for 2d unity Udemy course
            width: 500px;
            margin-right: auto;"
      src="Section_003/Gifs/SofieSnowboarder2.GIF">
+
+# Sofie Quiz
+
+<img style="display: block;
+           margin-left: auto;
+           width: 500px;
+           margin-right: auto;"
+     src="Section_004/Gifs/SofieQuiz.GIF">
