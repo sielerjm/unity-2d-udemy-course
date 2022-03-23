@@ -2,7 +2,13 @@
 Repo for 2d unity Udemy course
 
 
-# Delivery Driver (coming soon...)
+# Delivery Driver
+
+<img style="display: block;
+           margin-left: auto;
+           width: 500px;
+           margin-right: auto;"
+     src="Section_002/Gifs/DeliveryDriver.GIF">
 
 # Snowboarder
 
