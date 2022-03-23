@@ -8,7 +8,7 @@ Repo for 2d unity Udemy course
            margin-left: auto;
            width: 500px;
            margin-right: auto;"
-     src="Section_003/Gifs/DeliveryDriver.GIF">
+     src="Section_002/Gifs/DeliveryDriver.GIF">
 
 # Snowboarder
 
